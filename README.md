@@ -49,3 +49,45 @@ python train.py data_dir --learning_rate 0.01 --hidden_units 250 --epochs 3
 ```bash
 python train.py data_dir --gpu
 ```
+
+### Predict
+
+#### Basic Usage:
+
+```bash
+python predict.py /path/to/image checkpoint
+```
+
+#### Options:
+
+- Return top K most likely classes:
+
+```bash
+python predict.py input checkpoint --top_k 3
+```
+
+- Use a mapping of categories to real names:
+
+```bash
+python predict.py input checkpoint --category_names cat_to_name.json
+```
+
+- Use GPU for inference:
+
+```bash
+python predict.py input checkpoint --gpu
+```
+
+## Instructions
+
+1. Ensure that the necessary Python libraries are installed.
+
+2. Prepare your dataset and place it in the specified directory.
+
+3. Use `train.py` to train the model and save the checkpoint.
+
+4. Use `predict.py` to make predictions on new images.
+
+### License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
