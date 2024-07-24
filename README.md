@@ -88,6 +88,6 @@ python predict.py input checkpoint --gpu
 
 4. Use `predict.py` to make predictions on new images.
 
-### License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
